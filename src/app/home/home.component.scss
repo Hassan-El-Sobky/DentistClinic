@@ -1,0 +1,180 @@
+.home
+{
+    background-image: url('../../assets/drbk.jpg');
+}
+.row
+{
+    --bs-gutter-x: none;
+}
+.prot
+{
+    max-width: 1160px;
+    margin: auto
+}
+.prot .itemContent
+{
+    background-color: #00b3cc;
+
+    padding: 40px;
+}
+.prot .bgdark
+{
+    background-color: #007181;
+    padding: 40px;
+}
+.prot  .tooth
+{
+    background-color: #002A3F;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: -70px;
+   cursor: pointer;
+}
+.prot .tooth:hover
+{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #00B3CC;
+}
+.drOne:hover
+{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #00B3CC;
+}
+.prot  .headerDutis p
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  color: #fff;
+ 
+}
+.prot  .headerDutis span
+{
+    color: #fff;
+}
+.prot button
+{
+    margin-top: 18px;
+    padding: 7px 30px;
+    border: none;
+    font-family: 'Merriweather', serif;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.prot button:hover
+{
+    background-color: #f0f0f0;
+}
+
+.prot .select
+{
+    margin-top: 15px;
+    padding: 7px 30px;
+    background-color: #007181;
+    border: 2px solid #fff;
+}
+
+
+
+.drname h3 , p , .serv span , .serv p , .servDesc p
+{
+  font-family: 'Merriweather', serif ;
+  font-size: 20px;
+}
+.drname hr
+{
+    width: 100px;
+    height: 4px;
+    background-color: #007181;
+}
+
+.drname h2 ,.serv h2 
+{
+    color: #00b3cc;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+}
+
+.serv
+{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.serv hr 
+{
+    width: 10%;
+    height: 5px;
+    margin: auto;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+.servDesc
+{
+    padding: 20px;
+}
+.servIcon
+{
+    width: 90px;
+    height: 90px;
+    background-color: #007181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius:50%;
+    margin-top: -70px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+.servIcon:hover
+{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #00B3CC;
+}
+.servDesc h2 
+{
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+.serImg img
+{
+  width: 95%;
+
+}
+@media (max-width:952px)
+{
+ .serv
+ {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+ }
+ .drname h2 ,.serv h2 
+{
+    font-size: 40px;
+    
+}
+.drname , .drp
+{
+    text-align: center;
+}
+.drname hr 
+{
+    margin: auto;
+}
+}

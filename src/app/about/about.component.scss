@@ -1,0 +1,135 @@
+.row
+{
+--bs-gutter-x: none;
+}
+.col-lg-4 {
+    padding: 20px;
+}
+.about
+{
+    background-color: #E0E0E0;
+}
+.dri
+{
+    display: flex;
+    align-items: center;
+    background-color: #006d95;
+}
+.drOne
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #00B3CC;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.drImage
+{
+    width: 100%;
+    position: relative;
+}
+.drImage .overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   opacity: 0;
+   transition: opacity 0.5s  ease-in;
+}
+.drImage .overlay:hover
+{
+    opacity: 1;
+}
+.drImage .img-fluid
+{
+    width: 100%;
+}
+.drOne:hover
+{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #00B3CC;
+}
+.drbio
+{
+    padding: 20px;
+    background-color: #006d95;
+}
+.drbio p 
+{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #fff;
+}
+.drbio h2
+{
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+}
+.drbio span
+{
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+.serv h2 
+{
+    color: #00b3cc;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+}
+
+.serv
+{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.soical
+{
+    text-align: right;
+}
+.soical i
+{
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    margin: 4px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:952px)
+{
+ .serv
+ {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+ }
+.serv h2 
+{
+    font-size: 40px;
+    
+}
+}

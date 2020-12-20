@@ -1,0 +1,54 @@
+<section id="covid" class="covid">
+    <div class="serv text-center py-5">
+        <h2>Covid-<em style="color: red;">19</em></h2>
+    </div>
+<div class="container">
+    <div  
+    class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="10"
+    [infiniteScrollThrottle]="2000"
+    (scrolled)="onScroll()"
+    >
+    <div class="row pt-5">
+      <div class="col-lg-4 col-md-6 col-sm-12 p-2" *ngFor="let post of allpost">
+       <!--  card -->
+        <div class="card shadow p-4">
+         <div class="card-body">
+          <h5 class="card-title text-center ">Country: {{post.Country}}</h5>
+          <p class="card-text"> NewConfirmed:<span class="text-primary">{{post.NewConfirmed}}</span></p>
+          <p class="card-text"> TotalConfirmed:<span class="text-primary">{{post.TotalConfirmed}}</span></p>
+          <p class="card-text"> NewDeaths: <span class="text-danger">{{post.NewDeaths}}</span></p>
+          <p class="card-text"> TotalDeaths:<span class="text-danger">{{post.TotalDeaths}}</span></p>
+          <p class="card-text"> NewRecovered:<span class="text-primary">{{post.NewRecovered}}</span></p>
+          <p class="card-text"> TotalRecovered:<span class="text-primary">{{post.TotalRecovered}}</span></p>
+          <p class="card-text"> Date:{{post.Date | date: 'dd/MM/yyyy'}}</p>
+        
+          </div>
+        </div>
+       </div>
+    </div> 
+    </div>
+    <!--  card End -->
+    <div class="row">
+        <div class="col-md-12 ">
+        <ngx-spinner
+        bdOpacity = 1
+        bdColor = ""
+        size = "default"
+        color = "#581f87"
+        type = "ball-pulse-sync"
+        [fullScreen] = "false"
+        >
+        </ngx-spinner>
+      </div>
+    </div>
+    <!-- Alert no more post -->
+    <div *ngIf = "!notEmptyPost" class="row pb-5">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="text-muted h6 alert alert-secondary p-2">No more items to show</div>
+      </div>
+    </div>
+    </div> 
+
+</section>

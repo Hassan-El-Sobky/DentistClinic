@@ -1,0 +1,111 @@
+.contact
+{
+  position: relative;
+}
+
+input ,textarea , input:focus ,textarea:focus
+{
+    background-color: #EDEDED;
+}
+
+.btn
+{
+    background-color: #00B3CC;
+    color: #fff;
+}
+.btn:hover
+{
+    background-color: #007080;
+    border-radius: none;
+}
+h2
+{
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+    font-weight: bolder;
+}
+p
+{
+    margin-bottom: 0;
+    font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+.colBorder
+{
+    border-left: 1px solid black;
+}
+.colBorder i 
+{
+    color: #00B3CC;
+}
+/*Thanks Message Div Start*/
+.thanks
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:rgba(0, 0,0, 0.7);
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message
+{
+    background-color: #374047;
+    width: 40%;
+    
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  border-radius: 15px;
+}
+.message p 
+{
+    font-size: 18px;
+}
+.fa-window-close
+{
+    color: red;
+    cursor: pointer;
+}
+.tAlign
+{
+  text-align: right;
+}
+/*Thanks Message Div End*/
+
+@media (max-width:952px)
+{
+    .colBorder .col-sm-3 , .colBorder .col-sm-9
+    {
+        margin-left: 20px;
+        text-align: center;
+    }
+    .colBorder
+    {
+        border-left: none;
+    }
+    .book h2 
+    {
+        font-size: 25px;
+    }
+    .tAlign ,.tAlContet
+    {
+       margin: auto;
+    }
+}
+
+.cFlex
+{
+    display: flex;
+    align-content: center;
+    margin-left: 20px;
+}
+.cFlex i 
+{
+    margin-left: 10px;
+    margin-right: 15px;
+}

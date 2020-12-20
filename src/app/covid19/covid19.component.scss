@@ -1,0 +1,43 @@
+.serv h2 
+{
+    color: #000;
+    font-size: 60px;
+    font-family: 'Bree Serif', serif;
+}
+
+.serv
+{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+h5 
+{
+    font-family: 'Bree Serif', serif;
+}
+p{
+   
+    font-family: 'Merriweather', serif;
+}
+
+ngx-spinner
+{
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+}
+
+@media (max-width:952px)
+{
+ .serv
+ {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+ }
+.serv h2 
+{
+    font-size: 40px;
+    
+}
+}

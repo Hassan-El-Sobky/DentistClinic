@@ -1,0 +1,133 @@
+<section id="contact" class="contact">
+    <div *ngIf='messageFlag' class="thanks">
+        <div class="message">
+          <i class="fas fa-check-circle fa-5x"></i>
+          <p>Thank You</p>
+          <p>The form Submitted successfully</p>
+          <p>You will be redirect to home page</p>
+          <i (click)='close()' class="fas fa-window-close fa-2x "></i>
+        </div>
+    
+      </div>
+<div class="container">
+    <div class="row py-5">
+        <div class="col-md-6 col-sm-12">
+            <div class="book">
+               <p>Book a visit with your doctor</p>
+               <hr/>
+               <h2>MAKE AN APPOINTMENT NOW</h2> 
+            </div>
+            <div class="form">
+                <form [formGroup]='formData' (ngSubmit)='onSubmit()'>
+                    <div class="form-group py-2">
+                      <input  type="email" formControlName="email"
+                        placeholder="Enter your email" class="form-control">
+                      <div *ngIf='formData.controls.email.errors && formData.controls.email.touched' class="alert alert-danger">
+                        Email required
+                      </div>
+                    </div>
+              
+                    <div class="form-group py-2">
+                      <input  type="text" formControlName="name"
+                        placeholder="Enter your name" class="form-control">
+                      <div *ngIf='formData.controls.name.errors && formData.controls.name.touched' class="alert alert-danger">
+                        Name required &
+                        Must Begin with Captial letter
+                      </div>
+                    </div>
+              
+                    <div class="form-group py-2">
+                      <textarea  placeholder="Message" formControlName="message"
+                        class="form-control"></textarea>
+              
+                      <div *ngIf='formData.controls.message.errors && formData.controls.message.touched' class="alert alert-danger">
+                        Enter your message
+                      </div>
+                    </div>
+              
+                    <div class="form-group py-3">
+                      <button [disabled]="formData.invalid" class="btn">BOOK APPOINTMENT</button>
+                    </div>
+              
+                  </form>
+            </div>
+        </div>
+ <div class="col-md-6 col-sm-12 bor ">
+ <div class="colBorder mt-2">
+    <div class="row py-4">
+        <div class="col-md-12 cFlex ">
+         <i class="far fa-hospital fa-4x"></i>
+         <div>
+         <p>EMERGENCY CONTACT</p>
+            <span>Free call 24/7</span>
+            <br>
+            <span>+1555 6761 020</span>
+        </div>
+      </div>
+
+           
+
+      <div class="col-md-12 cFlex py-3">
+        <i class="fas fa-h-square fa-4x"></i>
+        <div>
+          <p>HOME VISIT</p>
+          <span>Chargeable call 24/7</span>
+          <br>
+          <span>+1777 6761 050</span>
+       </div>
+     </div>
+
+
+     <div class="col-md-12 cFlex py-3">
+      <i class="fas fa-phone-square fa-4x"></i>
+      <div>
+        <p> PHONE CONTACT</p>
+        <span>Within working hours</span>
+        <br>
+        <span>+0800 2336 7811</span>
+     </div>
+   </div>
+
+
+
+
+
+      
+    </div> 
+<!--
+
+    <div class="row py-4">
+        <div  class="col-sm-3 tAlign ">
+            <i class="fas fa-h-square fa-4x"></i>
+        </div>
+        <div class="col-sm-9 .tAlContent">
+            <p>HOME VISIT</p>
+            <span>Chargeable call 24/7</span>
+            <br>
+            <span>+1777 6761 050</span>
+        </div>
+    </div>
+    
+
+    <div class="row py-4">
+        <div  class="col-sm-3  tAlign">
+            <i class="fas fa-phone-square fa-4x"></i>
+        </div>
+        <div class="col-sm-9 .tAlContent ">
+            <p>HOME VISIT</p>
+            <span>Chargeable call 24/7</span>
+            <br>
+            <span>+1777 6761 050</span>
+        </div>
+    </div>
+
+      -->
+    </div>
+
+    
+ </div>
+
+    </div>
+</div>
+
+</section>

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.header
+{
+    background-image: url('../../assets/hedaerbg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+ 
+}
+
+
+nav .logo
+{
+  
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0 100px;
+}
+nav
+{
+
+    height: 90px;
+    background-color: rgba(0,0,0,0.5);
+}
+nav ul 
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+nav ul li 
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a 
+{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-family: 'Bree Serif', serif;
+}
+nav ul li a:hover
+{
+  background-color: #007181;
+  transition: .5s;
+}
+
+.checkbtn i
+{    
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check
+{
+    display: none;
+}
+
+
+
+
+/*Carsoul start*/
+.container
+{
+    margin: auto;
+    margin-top: 250px;
+}
+.col-md-7
+{
+    margin-left: 150px;
+}
+
+.container h1 
+{
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.headline
+{
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .1em;
+}
+
+.sliderContent .dashSutible p
+{
+    font-size: 20px;
+    margin: 0 0 16px;
+    width: 80%;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+.sliderContent .dashSutible .bt
+{
+    padding: 15px 40px;
+  
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+.sliderContent .dashSutible .btnl
+{
+    background-color:#00b3cc;
+}
+.sliderContent .dashSutible .btnl:hover
+{ transition: 0.5s ease-in;
+    background-color:#007181;
+}
+.sliderContent .dashSutible .btnr{
+ transition: 0.5s ease-in;
+ background-color: #005b88;
+ 
+
+}
+.sliderContent .dashSutible .btnr:hover{
+    background-color: #002A3F;
+}
+.colBorder .alLeft
+{
+    text-align: right;
+}
+
+
+/*Media Query*/
+@media (max-width:952px)
+{
+    nav .logo
+    {
+        font-size: 30px;
+    }
+    nav ul li a 
+    {
+        font-size: 15px;
+    }
+    .header
+{
+    background-image: url('../../assets/hedaerbg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+}
+.col-md-7
+{
+    margin-left: 30px;
+}
+
+.sliderContent .dashSutible .bt
+    {
+  margin-top: 10px;
+    margin-right: 10px;
+
+    }
+    .container h1 
+    {
+
+    font-size: 40px;
+
+    }
+    .sliderContent .dashSutible p
+    {
+        font-size: 15px;
+    }
+    .carousel-control-prev {
+        left: -15px;
+
+
+    }
+}
+
+
+
+@media (max-width:850px)
+{
+    nav .logo
+    {
+       position: absolute;
+
+    }
+    nav .logo img
+    {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .checkbtn i {
+        display: block;
+        position: relative;
+        left: 15px;
+        z-index: 5;
+    }
+    nav ul 
+    {
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba(0,0,0, 0.5);
+        transition: all .5s;
+        z-index: 5;
+    }
+    nav ul li 
+    {
+        display: block;
+        text-align: center;
+        
+    }
+    nav ul li a 
+    {
+        font-size: 20px;
+    }
+    #check:checked ~ul{
+        left: 0;
+        top: 80px;
+    }
+}
+/*end*/

@@ -205,13 +205,13 @@ nav ul li span:active
 {
     nav .logo
     {
-       position: absolute;
+      display: block;
 
     }
     nav .logo img
     {
         position: absolute;
-        left: 10px;
+        left: 100px;
         top: 15px;
     }
     .checkbtn i {

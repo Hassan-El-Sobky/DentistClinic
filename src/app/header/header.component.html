@@ -5,11 +5,36 @@
         <i class="fas fa-bars"></i>
     </label>
   <label class="logo"><img [src]="logoSrc"></label>
-<ul id="Ul">
-  <li><a  (click)='toHome()' routerLink='/home'>Home</a></li>
+<ul  [class.clicked]='!clicked' id="Ul">
+  <!-- <li><label for='check' class="checkbtn" ><a   (click)='toHome()' routerLink='/home'>Home</a></label></li>
   <li><a (click)='toAbout()' routerLink='/about'>About Us</a></li>
   <li><a (click)='toContact()' routerLink='/contact' >Contact Us</a></li>
   <li><a (click)='toCovid()' routerLink='/covid19'>Covid-19</a></li> 
+  -->
+  <li >
+  <label for="check" class="checkbtn">
+       <span (click)='toHome()' routerLink='/home'>Home</span>
+</label> 
+</li>
+<li >
+  <label for="check" class="checkbtn">
+       <span (click)='toAbout()' routerLink='/about'>About Us</span>
+</label> 
+</li>
+
+<li>
+<label for="check" class="checkbtn">
+  <span  (click)='toContact()' routerLink='/contact'>Contact Us</span>
+</label> 
+</li>
+
+
+<li>
+  <label for="check" class="checkbtn">
+    <span  (click)='toCovid()' routerLink='/covid19'>Covid-19</span>
+  </label> 
+  </li>
+
 </ul>
   
 </nav>

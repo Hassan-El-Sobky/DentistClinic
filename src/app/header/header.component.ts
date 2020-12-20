@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
  logoSrc='assets/logo.png'
+ clicked:boolean=true
   constructor() { }
 
   ngOnInit(): void {
@@ -14,6 +15,9 @@ export class HeaderComponent implements OnInit {
   toHome()
   {
     document.getElementById('home')?.scrollIntoView({behavior:'smooth'});
+    var x= document.getElementById('Ul')?.style.display=='none';
+    this.clicked=!this.clicked
+    
   }
   
   toAbout()

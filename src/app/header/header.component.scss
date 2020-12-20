@@ -43,7 +43,7 @@ nav ul li
     line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a 
+nav ul li span 
 {
     color: white;
     font-size: 17px;
@@ -51,11 +51,16 @@ nav ul li a
     padding: 7px 14px;
     border-radius: 5px;
     font-family: 'Bree Serif', serif;
+    cursor: pointer;
 }
-nav ul li a:hover
+nav ul li span:hover
 {
   background-color: #007181;
   transition: .5s;
+}
+nav ul li span:active
+{
+    border: 5px solid;
 }
 
 .checkbtn i
@@ -145,7 +150,10 @@ nav ul li a:hover
 
 /*Media Query*/
 @media (max-width:952px)
-{
+{ 
+    *{
+        overflow-x: hidden;
+    }
     nav .logo
     {
         font-size: 30px;
@@ -212,7 +220,7 @@ nav ul li a:hover
         left: 15px;
         z-index: 5;
     }
-    nav ul 
+    nav ul , .cliked
     {
         position: fixed;
         left: -100%;
